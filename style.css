@@ -42,6 +42,7 @@ header .mylogo {
 
     tab-size: 40px;
     padding: 5px;
+    margin-top: 10px;
 }
 
 header .mylogo:hover {
@@ -60,14 +61,20 @@ header select {
 }
 
 
-header .mynavbar .rightTabs {
-    position: absolute;
-    right: 3px;
+header .mynavbar .leftTabs {
+    margin-right: 70px;
+    margin-top: 10px;
 }
+header .rightTabs {
+    font-size: 20px;
+    line-height: 25px;
+    
 
+}
 header .mynavbar {
-    margin: 5px auto;
-    /*center*/
+    display: flex;
+    margin-top: 20px;
+   
 }
 
 header .mynavbar .cart {
@@ -99,13 +106,9 @@ header .mynavbar .leftTabs select:hover {
     cursor: pointer;
 }
 
-header .rightTabs {
-    font-size: 20px;
-    line-height: 25px;
 
-}
 header .rightTabs a {
-margin: 0px 10px;
+    margin: 0px 10px;
 }
 header .rightTabs #login:hover{
     
