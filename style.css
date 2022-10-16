@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: Arial, Helvetica, sans-serif;
+}
+
+
+:root {
+
+    --maniaGreen: #0E8585;
+    --maniaDarkGreen:#184B4B;
+    --maniaGray: #444444;
+    --maniaLogoColor: linear-gradient(181.05deg, #17ACAC 0.9%, #000000 294.55%);
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: white;
+
+
+}
+
+header .mylogo {
+    font: 2rem Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+    color: var(--maniaGreen);
+
+    background: var(--maniaLogoColor);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    tab-size: 40px;
+    padding: 5px;
+}
+
+header .mylogo:hover {
+    color: var(--maniaGreen);
+}
+
+header a,
+header select {
+    /*logo and tabs*/
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 5px;
+    font: 24px Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+
+
+header .mynavbar .rightTabs {
+    position: absolute;
+    right: 3px;
+}
+
+header .mynavbar {
+    margin: 5px auto;
+    /*center*/
+}
+
+header .mynavbar .cart {
+    color: var(--maniaGreen);
+    font-size: 36px
+}
+
+header .mynavbar .leftTabs a,
+header .mynavbar .leftTabs select {
+    /*tabs only*/
+    color: var(--maniaGray);
+    text-decoration: none;
+    font-size: 24px;
+    padding: 5px 20px;
+    line-height: 30px;
+
+}
+
+header .mynavbar .leftTabs select {
+    border: none;
+    font-weight: bold;
+    font: Arial, Helvetica, sans-serif;
+
+}
+
+header .mynavbar .leftTabs a:hover,
+header .mynavbar .leftTabs select:hover {
+    border-bottom: 3px solid var(--maniaGreen);
+    cursor: pointer;
+}
+
+header .rightTabs {
+    font-size: 20px;
+    line-height: 25px;
+
+}
+header .rightTabs a {
+margin: 0px 10px;
+}
+header .rightTabs #login:hover{
+    
+    color: var(--maniaDarkGreen);
+
+}
+header .rightTabs #register:hover{
+    background-color: var(--maniaDarkGreen);
+}
+
+
+
+header .rightTabs #login {
+    text-decoration-line: underline;
+    color: var(--maniaGreen);
+}
+
+header .rightTabs #register {
+    color: white;
+    background-color: var(--maniaGreen);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+/*navbar*/
+
+/*footer*/
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background-color: var(--maniaDarkGreen);
+    color: white;
+    text-transform: capitalize;
+    font:15px Arial, Helvetica, sans-serif;
+
+
+}
+footer .left {
+    display: flex;
+    flex-direction: row;
+}
+footer .left div{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+footer .left div a{
+    padding: 7px;
+
+}
+footer .left div a:hover{
+text-decoration: underline;
+cursor: pointer;
+}
+  footer .right {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+  footer .right a{
+    padding: 0px 10px;
+    font-size: larger;
+  }
+  footer .right a i:hover{
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+
+
+
+/* */
+@media(max-width:900px) {
+
+    header .rightTabs a,
+    header .mynavbar .leftTabs a,
+    header .mynavbar .leftTabs select {
+        font-size: smaller;
+
+    }
+}
