@@ -9,9 +9,18 @@
 :root {
 
     --maniaGreen: #0E8585;
-    --maniaDarkGreen:#184B4B;
+    --maniaDarkGreen: #184B4B;
+    --maniaLightGreen:#009494;
     --maniaGray: #444444;
     --maniaLogoColor: linear-gradient(181.05deg, #17ACAC 0.9%, #000000 294.55%);
+    --maniaPink: rgba(255, 66, 66, 1);
+}
+
+.text-green {
+    color: var(--maniaGreen);
+}
+.text-center{
+    text-align: center;
 }
 
 header {
@@ -65,21 +74,23 @@ header .mynavbar .leftTabs {
     margin-right: 70px;
     margin-top: 10px;
 }
-header .rightTabs {
+
+header .mynavbar .rightTabs {
     font-size: 20px;
     line-height: 25px;
-    
+
 
 }
+
 header .mynavbar {
     display: flex;
     margin-top: 20px;
-   
+
 }
 
 header .mynavbar .cart {
     color: var(--maniaGreen);
-    font-size: 36px
+    font-size: 30px
 }
 
 header .mynavbar .leftTabs a,
@@ -110,12 +121,14 @@ header .mynavbar .leftTabs select:hover {
 header .rightTabs a {
     margin: 0px 10px;
 }
-header .rightTabs #login:hover{
-    
+
+header .rightTabs #login:hover {
+
     color: var(--maniaDarkGreen);
 
 }
-header .rightTabs #register:hover{
+
+header .rightTabs #register:hover {
     background-color: var(--maniaDarkGreen);
 }
 
@@ -132,7 +145,74 @@ header .rightTabs #register {
     border-radius: 10px;
     padding: 10px 20px;
 }
+
 /*navbar*/
+
+.bigCard {
+    padding: 20px;
+    border: 1px solid rgba(220, 219, 219, 0.351);
+    margin: 50px;
+    min-height: 400px;
+    min-width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+}
+.course .bigCard .enroll{
+    display: flex;
+}
+.course .bigCard .enroll .card {
+    position: absolute;
+    border: 1px solid #0E8585;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 250px;
+    height: 150px;
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+
+}
+
+.course .bigCard .card-footer {
+    position: absolute;
+    background-color: var(--maniaPink);
+    color: white;
+    margin-left: 50%;
+    text-align: center;
+    border-radius: 0px 0px 10px 0px;
+    font-size: 32px;
+    width: 100px;
+    height: 50px;
+
+    right: 0px;
+    bottom: 0px;
+
+
+}
+.enroll .stars{
+    position: absolute;
+    right: 10px;
+
+}
+.enroll .stars img {
+    padding:1rem .1rem;
+    width: 30px;
+  } 
+  .enroll button {
+    background-color: var(--maniaLightGreen);
+    margin: 50px auto;
+    padding: 10px 20px;
+    width: 300px;
+height: 90px;
+    border: 1px solid #178C8C   ;
+     border-radius: 5px;
+     color: white;
+     font-size: 36px;
+  }
+
+
+
+
 
 /*footer*/
 footer {
@@ -144,53 +224,115 @@ footer {
     background-color: var(--maniaDarkGreen);
     color: white;
     text-transform: capitalize;
-    font:15px Arial, Helvetica, sans-serif;
+    font: 15px Arial, Helvetica, sans-serif;
 
 
 }
+
 footer .left {
     display: flex;
     flex-direction: row;
 }
-footer .left div{
+
+footer .left div {
     display: flex;
     flex-direction: column;
     margin: 20px;
 }
-footer .left div a{
+
+footer .left div a {
     padding: 7px;
 
 }
-footer .left div a:hover{
-text-decoration: underline;
-cursor: pointer;
+
+footer .left div a:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
-  footer .right {
+
+footer .right {
     position: absolute;
     right: 30px;
     bottom: 30px;
     display: flex;
     flex-direction: row;
-  }
-  footer .right a{
+}
+
+footer .right a {
     padding: 0px 10px;
     font-size: larger;
-  }
-  footer .right a i:hover{
+}
+
+footer .right a i:hover {
     font-weight: bold;
     cursor: pointer;
-  }
+}
 
 
 
 
 /* */
-@media(max-width:900px) {
+@media(max-width:1250px) {
+    header .rightTabs {
+        margin-top: 10px;
 
-    header .rightTabs a,
-    header .mynavbar .leftTabs a,
-    header .mynavbar .leftTabs select {
+    }
+
+    header .rightTabs a {
+        font-size: smaller;
+        margin-right: 1px;
+        margin-left: 0px;
+
+    }
+
+    header .leftTabs {
+        margin-right: 0px;
+
+    }
+}
+
+@media(max-width:1050px) {
+
+    header .mynavbar .leftTabs {
+        margin-right: 5px;
+    }
+
+    header .rightTabs a {
         font-size: smaller;
 
     }
+
+
+    header .mynavbar .leftTabs a,
+    header .mynavbar .leftTabs select {
+
+        padding: 3px 10px;
+    }
+
+    header .rightTabs #register {
+
+        padding: 10px 10px;
+    }
+}
+
+@media(max-width:890px) {
+    header .mynavbar {
+        margin-top: 50px;
+    }
+
+    header .mynavbar .leftTabs a,
+    header .mynavbar .leftTabs select,
+    header .rightTabs a {
+
+        font-size: smaller;
+    }
+}
+
+@media(max-width:650px) {
+    header .mynavbar {
+        margin-top: 70px;
+        flex-direction: column;
+
+    }
+
 }
