@@ -446,34 +446,45 @@ footer .right a i:hover {
         font-size: 25px;
     }
    .reviewStars,.revInp input{
-    height: 50px;
+    height: 70px;
    }
    .reviewStars img{
     padding: 1px;
     width: 20px;
+}
+.mynavbar .rightTabs{
+ margin:auto;
 }
    
 }
 
 @media(max-width:650px) {
     header .mynavbar {
-        margin: 50px 0px 10px 0px;
-        flex-direction: column;
+        margin: auto 0px ;
 
     }
 
+    
     .enroll .enrollBtn {
-        left: 140px;
+        left: 125px;
         padding: 7px 10px;
         width: 150px;
         height: 50px;
         font-size: 20px;
+       
     }
 
     .course {
-        margin: 80px 3px 250px 3px;
+        margin: 120px 3px 250px 3px;
         
         width: 100%;
     }
+    .course .enroll .card {
+    width: max-content;
+    }
+
+    .reviewStars,.revInp input{
+        height: 120px;
+       }
 
 }
