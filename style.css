@@ -471,7 +471,9 @@ footer .right a i:hover {
     }
 
     .course {
-        margin-top: 80px;
+        margin: 80px 3px 250px 3px;
+        
+        width: 100%;
     }
 
 }
