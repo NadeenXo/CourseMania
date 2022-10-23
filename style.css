@@ -428,6 +428,8 @@ footer .right a i:hover {
 }
 
 @media(max-width:890px) {
+  
+  
     header .mynavbar {
         margin-top: 50px;
     }
@@ -459,9 +461,25 @@ footer .right a i:hover {
 }
 
 @media(max-width:650px) {
+    .course{
+        padding: 4px;
+        margin: 1px;
+        margin-bottom: 250px;
+
+    }
+    .enroll .enrollBtn {
+     margin-left: 75px;
+    }
     header .mynavbar {
         margin: auto 0px ;
+        
 
+    }
+    header{
+        flex-wrap: wrap;
+    }
+    nav .rightTabs a {
+        margin: 5px 0px;
     }
 
     
@@ -476,7 +494,6 @@ footer .right a i:hover {
 
     .course {
         margin: 120px 3px 250px 3px;
-        
         width: 100%;
     }
     .course .enroll .card {
@@ -484,7 +501,7 @@ footer .right a i:hover {
     }
 
     .reviewStars,.revInp input{
-        height: 120px;
+        height: 70px;
        }
 
 }
