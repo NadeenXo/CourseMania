@@ -301,6 +301,9 @@ nav .rightTabs #register {
     width: 25px;
 
 }
+.reviewStars img:hover{
+    content:url('yellowstar.png');
+}
 
 .revInp {
     display: flex;
